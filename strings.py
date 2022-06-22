@@ -1,14 +1,33 @@
 from unittest import result
 
 
-school ="AkiraChix"
-print("The resulting string is:" +str(school))
+school =" AkiraChix"
+print(str(school))
 x=len(school)//2
-result=""
+output=""
 for i in range(len(school)):
     if i>=x:
-        result+=school[i].upper()
+        output+=school[i].upper()
     else:
-        result +=school[i]
+        output +=school[i]
         
-print("The resulting string is:" +str(result))
+print(str(output))
+
+
+colors=["Red","Green","Yellow","Marron","Violet","Blue"]
+for color in range(len(colors)):
+    print( color,colors[color])
+    new_list=enumerate(colors)
+    print(new_list)
+    
+
+
+my_homeplace="I come from Laikipia county"
+print(my_homeplace.replace("Laikipia","Nyeri"))
+print(my_homeplace.swapcase())
+print("from" in my_homeplace)
+print(my_homeplace.find("come"))
+
+for word in my_homeplace:
+    print(word.isdigit())
+    break

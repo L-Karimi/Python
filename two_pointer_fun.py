@@ -8,14 +8,15 @@ def reverse_string():
     end=len(new_sentence)-1
     while start<end:
         new_sentence[start],end= new_sentence[end],start
-        
         start +=1
         end-=1
         new_string=""
         print(new_sentence)
         new=new_sentence.append(new_string)
-        print(new)
+        print(str(new))
         print(new_string)
         print(new_sentence)
 reverse_string()
+
+
     

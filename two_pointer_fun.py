@@ -1,7 +1,7 @@
 # write a program that reverses a list
+sentense="I am AkiraChix"
 
 def reverse_string():
-    sentense="I am AkiraChix"
     new_sentence= sentense.split()
     print(new_sentence)
     start=0

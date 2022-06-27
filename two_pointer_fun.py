@@ -32,9 +32,12 @@ def int_palin():
         print("Not a palindrome")
 int_palin()
 
-def palindrome():
-    x=input("Please enter a word:")
-    result=s.split()
+
+# check is a string is a palindrome or not
+x=input("Enter a word:")
+
+def palindrome(x):
+    result=x.split()
     start=0
     end=len(result)-1
     while start<end:
@@ -43,12 +46,12 @@ def palindrome():
         end-=1
         s="".join(result)
         print(s)
-        if start==end:
-            print("This is a palindrome")
+        if s not in x:
+            print("This is  not a palindrome")
         else:
             print("This is not a palindrome")
         # break
-palindrome()
+palindrome("Enter a word:")
       
 
 

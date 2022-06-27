@@ -2,9 +2,9 @@
 
 
 import string
+# use two pointer function to reverse a given
 
-
-sentence="I am AkiraChix"
+sentence=" I am AkiraChix"
 
 def reverse_string(sentence):
     new_sentence= sentence.split()
@@ -17,7 +17,7 @@ def reverse_string(sentence):
         new_string=" ".join(new_sentence)
         print(new_string)
 reverse_string("I am AkiraChix")
-
+# check if a number is a palindrome or not
 def int_palin():
     num=int(input("Enter a number:"))
     x=num
@@ -29,20 +29,29 @@ def int_palin():
     if(x==s):
         print("The number is palindrome")
     else:
-        print("Not a palindrome!")
+        print("Not a palindrome")
 int_palin()
 
-s=string(input("Please ender word:"))
-def palindrome(s):
+def palindrome():
+    x=input("Please enter a word:")
+    result=s.split()
     start=0
-    end=len(s)-1
-    while start<=end:
-        s[start],s[end]=s[end],s[start]
-        if s==s:
-            print("This is a plaindrome")
+    end=len(result)-1
+    while start<end:
+        result[start],result[end]=result[end],result[start]
+        start +=1
+        end-=1
+        s="".join(result)
+        print(s)
+        if start==end:
+            print("This is a palindrome")
         else:
-            print("This is not a plaindrome")
-palindrome("Enter a word:")
+            print("This is not a palindrome")
+        # break
+palindrome()
+      
+
+
 
 
     
